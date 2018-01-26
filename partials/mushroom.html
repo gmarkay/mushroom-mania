@@ -1,7 +1,7 @@
 <input type="text" ng-model="mushName" ng-click="poison = ''">
 
-<input type="radio" name="safe" ng-value='true' ng-model='poison'>Poisonus
-<input type="radio" name="safe" ng-value='false' ng-model='poison'> Non-poisonus
+<input type="radio" name="safe" ng-value='false' ng-model='poison'>Poisonous
+<input type="radio" name="safe" ng-value='true' ng-model='poison'> Non-poisonous
 
 <ul ng-repeat="shroom in shroomList | filter: {name: mushName, edible: poison}">
   <strong style='text-transform:capitalize'>{{shroom.name}}</strong>
